@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ufg16';
+  tituloAEnviar = 'Titulo enviado desde el padre al Hijo'
+  mensajeDelHijo = '';
+
+  recibirMensaje(mensaje: string) {
+    this.mensajeDelHijo = mensaje;
+  }
 }
